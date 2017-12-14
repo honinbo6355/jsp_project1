@@ -1,0 +1,1 @@
+<jsp:forward page="r_answer_view.jsp"/>
