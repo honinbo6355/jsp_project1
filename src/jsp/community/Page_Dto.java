@@ -1,18 +1,18 @@
 package jsp.community;
 
 public class Page_Dto {
-	private int page_num; //현재 페이지 번호
-	private int total_record; //총 게시물 수
-	private int page_per_record_cnt; //각 페이지당 게시물 수
-	private int group_per_page_cnt; //각 페이지당 보여줄 그룹 수
-	private int record_start_num; //게시물 시작 번호
-	private int record_end_num; //게시물 끝 번호
-	private int total_page; //전체 페이지 수
-	private int group_num; //현재 그룹번호
-	private int page_snum; //현재 그룹 시작 번호
-	private int page_enum; //현재 그룹 끝 번호
-	private int prev_page_num; //이전 페이지 번호
-	private int next_page_num; //다음 페이지 번호
+	private int page_num; 
+	private int total_record; 
+	private int page_per_record_cnt; 
+	private int group_per_page_cnt; 
+	private int record_start_num; 
+	private int record_end_num; 
+	private int total_page; 
+	private int group_num; 
+	private int page_snum; 
+	private int page_enum; 
+	private int prev_page_num; 
+	private int next_page_num; 
 	
 
 	public Page_Dto(){

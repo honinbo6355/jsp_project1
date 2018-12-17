@@ -20,22 +20,19 @@ public class C_Dao {
 		}
 	}
 	
-	public ArrayList<C_Dto> readPage(int startNo, int pageSize/*읽을 시작 인덱스, 읽을 갯수*/){
+	public ArrayList<C_Dto> readPage(int startNo, int pageSize){
 		ArrayList<C_Dto> dtos = new ArrayList<C_Dto>();
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;
 		String sql=null;
 		
-		// 읽을 시작 인덱스 변수 선언 및 초기화
-		// 읽을 갯수 변수 선언 및 초기화
-		
 		try{
 			conn=dataSource.getConnection();
 			sql="SELECT cNum, cId, cName, cTitle, cContent, cDate, cHit FROM community ORDER BY cNum desc limit ?, ?";
 			pstmt=conn.prepareStatement(sql);
-			pstmt.setInt(1, startNo-1/*읽을 시작 인덱스 변수*/);
-			pstmt.setInt(2, pageSize/*읽을 갯수 변수*/);
+			pstmt.setInt(1, startNo-1);
+			pstmt.setInt(2, pageSize);
 			rs=pstmt.executeQuery();
 			while(rs.next()){
 				int cNum = rs.getInt("cNum");
@@ -80,10 +77,10 @@ public class C_Dao {
 			pstmt=conn.prepareStatement(sql);
 			rs=pstmt.executeQuery();
 			if(rs.next())
-				dto.setTotal_record((rs.getInt(1) /*총 게시물 수*/));
-		    dto.setPage_num(c_Page /*현재 페이지 번호*/);
-			dto.setPage_per_record_cnt(5 /*각 페이지당 게시물 수*/);
-			dto.setGroup_per_page_cnt(5 /*각 페이지당 보여줄 그룹 수*/);
+				dto.setTotal_record((rs.getInt(1)));
+		    dto.setPage_num(c_Page);
+			dto.setPage_per_record_cnt(5);
+			dto.setGroup_per_page_cnt(5);
 			dto.Pazing();
 		}catch (Exception e) {
 			// TODO: handle exception
