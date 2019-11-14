@@ -1,15 +1,17 @@
 # my_portfolio_site
 
 ### <주제>
-- jsp를 이용한 답변형 게시판 <br/> <br/> <br />
+- jsp를 이용한 답변형 게시판 
+
+<br/><br/>
 
 ### <사용한 기술>
 
 - 프론트엔드 : html, css, javascript, bootstrap  
 - 백엔드 : java, jsp, mysql, tomcat
 
+<br/><br/>
 
-  
 ### <주요 기능>
 
 #### 회원가입 & 로그인  
