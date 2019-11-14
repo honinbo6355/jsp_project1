@@ -1,7 +1,7 @@
 # my_portfolio_site
 
 ### <주제>
-- jsp를 이용한 답변형 게시판 <br/> <br/>
+- jsp를 이용한 답변형 게시판 <br/> <br/> <br />
 
 ### <사용한 기술>
 
