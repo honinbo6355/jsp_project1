@@ -3,12 +3,14 @@
 ### <주제>
 - jsp를 이용한 답변형 게시판 
 
+<br/>
 
 ### <사용한 기술>
 
 - 프론트엔드 : html, css, javascript, bootstrap  
 - 백엔드 : java, jsp, mysql, tomcat
 
+<br/>
 
 ### <주요 기능>
 
